@@ -6,19 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Desafio das Tabelas</title>
     <style>
+      *{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+      h2 {
+        text-align: center;
+      }
       table {
         border-collapse: collapse;
         padding: 10px;
         width: 300px;
+        margin: auto;
       }
       td {
         border: 1px solid black;
         text-align: center;
         padding: 10px;
       }
+      footer{
+        text-align: center;
+      }
+      footer > p > a{
+        text-decoration: none;
+        color: black;
+        
+      }
+      footer > p > a:hover {
+        text-decoration: underline;
+        color: white;
+        background-color: grey;
+      }
     </style>
   </head>
   <body>
+    <h2>Desafio das Tabelas</h2>
     <table>
       <tr>
         <td>1</td>
@@ -46,8 +67,8 @@
         <td>15</td>
       </tr>
     </table>
-    <br>
-    <br>
+    <br />
+    <br />
     <table>
       <tr>
         <td colspan="4">A</td>
@@ -72,12 +93,15 @@
       <tr>
         <td colspan="4">N</td>
       </tr>
-
-
-
-
-
-
     </table>
   </body>
+  <br>
+  <footer>
+    <p>
+      <a href="tabela.html"> Desafio - parte 2</a>
+    </p>
+    <p>
+      <a href="tabela-2.html">Boletim de Notas </a>
+    </p>
+  </footer>
 </html>
