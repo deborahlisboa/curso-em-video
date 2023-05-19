@@ -1,93 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tabelas de Exemplo</title>
-</head>
-<style>
-  *{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-  }
-  table {
-    border-collapse: collapse;
-    width: 500px;
-    height: 500px;
-  }
-  td{
-    border: 1px solid black;
-    padding: 13px;
-    text-align: center;
-  }
-  .titulo{
-    font-size: 20px;
-    font-weight: bold;
-    background-color: rgb(94, 119, 94);
-    color: white;
-  }
-  .linha1{
-    background-color:rgba(94, 119, 94, 0.666);
-  }
-  .genero{
-    background-color: rgba(94, 119, 94, 0.203);
-  }
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas de Exemplo</title>
+  </head>
+  <style>
+    * {
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+    caption {
+      font-size: 1em;
+      text-align: start;
+      padding: 5px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 500px;
+      height: 500px;
+    }
+    td {
+      border: 1px solid black;
+      padding: 13px;
+      text-align: center;
+    }
+    .titulo {
+      font-size: 1.5em;
+      font-weight: bold;
+      background-color: rgb(94, 119, 94);
+      color: white;
+      padding: 12px;
+    }
+    .linha1 {
+      background-color: rgba(94, 119, 94, 0.666);
+    }
+    .genero {
+      background-color: rgba(94, 119, 94, 0.203);
+    }
+  </style>
+  <body>
+    <table>
+      <caption>
+        Tabela de Exemplo
+      </caption>
+      <thead>
+        <tr>
+          <td colspan="5" class="titulo" scope="colgroup">Filmes Favoritos</td>
+        </tr>
+      </thead>
 
-</style>
-<body>
-  <table>
-    <caption>Tabela de Exemplo</caption>
-    <tr>
-      
-      <td colspan="5" class="titulo">
-        Filmes Favoritos
-      </td>
-      
-    </tr>
-    <tr class="linha1">
-      <td>Grupo</td>
-      <td>Nomes</td>
-      <td colspan="3">Filmes</td>
-    </tr>
-    <tr>
-      <td rowspan="3" class="genero">Mulheres</td>
-      <td>Ana Maria Santos</td>
-      <td>Alien</td>
-      <td>Rambo</td>
-      <td>Vingadores</td> 
-    </tr>
-    <tr>
-      <td>Beatriz Souza</td>
-      <td>Hulk</td>
-      <td>Inception</td>
-      <td>Batman</td>
-    </tr>
-    <tr>
-      <td>Cláudia Melo</td>
-      <td>Oblivion</td>
-      <td>Matrix</td>
-      <td>Big Hero </td>
-    </tr>
-    <tr>
-      <td rowspan="3" class="genero">Homens</td>
-      <td>Bruno Mendonça</td>
-      <td>Intocável</td>
-      <td>Gladiador</td>
-      <td>Star Wars</td>
-    </tr>
-    <tr>
-      <td>Daniel Lourenço</td>
-      <td>Wall-E</td>
-      <td>Amnésia</td>
-      <td>Homem-Aranha</td>
-    </tr>
-    <tr>
-      <td>Fabiano Mota</td>
-      <td>Amnésia</td>  
-      <td>Homem-Aranha</td>
-      <td>Star Wars</td>
-    </tr>
-
-  </table>
-</body>
+      <tbody>
+        <tr class="linha1">
+          <td>Grupo</td>
+          <td>Nomes</td>
+          <td colspan="3" scope="colgroup">Filmes</td>
+        </tr>
+        <tr>
+          <td rowspan="3" class="genero" scope="rowgroup">Mulheres</td>
+          <td>Ana Maria Santos</td>
+          <td>Alien</td>
+          <td>Rambo</td>
+          <td>Vingadores</td>
+        </tr>
+        <tr>
+          <td>Beatriz Souza</td>
+          <td>Hulk</td>
+          <td>Inception</td>
+          <td>Batman</td>
+        </tr>
+        <tr>
+          <td>Cláudia Melo</td>
+          <td>Oblivion</td>
+          <td>Matrix</td>
+          <td>Big Hero</td>
+        </tr>
+        <tr>
+          <td rowspan="3" class="genero" scope="rowgroup">Homens</td>
+          <td>Bruno Mendonça</td>
+          <td>Intocável</td>
+          <td>Gladiador</td>
+          <td>Star Wars</td>
+        </tr>
+        <tr>
+          <td>Daniel Lourenço</td>
+          <td>Wall-E</td>
+          <td>Amnésia</td>
+          <td>Homem-Aranha</td>
+        </tr>
+        <tr>
+          <td>Fabiano Mota</td>
+          <td>Amnésia</td>
+          <td>Homem-Aranha</td>
+          <td>Star Wars</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>
