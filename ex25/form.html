@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Meu Primeiro Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="inome">Nome</label>:
+            <input type="text" name="nome" id="inome" required minlength="5"
+            placeholder="primeiro nome" autocomplete="username">
+        </p>
+        <p>
+            <label for="isobrenome">Sobrenome: </label>
+            <input type="text" name="sobrenome" id="isobrenome"  required
+            autocomplete="cc-name">
+        </p>
+        <p>
+            <label for="iidade">Idade: </label>
+            <input type="number" name="idade" id="iidade" required autocomplete="cc-number">
+        </p>
+        <p><label for="icategoria" >Categoria de trabalho:</label>
+            <select name="categoria" id="icategoria" required>
+                <option value="" selected disabled>Selecione</option>
+                <option value="Estudante">Estudante</option>
+                <option value="Professor">Professor</option>
+                <option value="Diretor">Diretor</option>
+                <option value="Gestor">Gestor</option>
+                <option value="Administrador">Administrador</option>
+            </select>
+        </p>
+        <p>
+            <label for="iemail">Email: </label>
+            <input type="email" name="email" id="iemail" required autocomplete="email">
+        </p>
+        <p>
+            <label for="isenha">Senha: </label>
+            <input type="password" name="senha" id="isenha" required minlength="6"
+            autocomplete="new-password">
+        </p>
+
+        <p><input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+    </form>
+</body>
+
+</html>
