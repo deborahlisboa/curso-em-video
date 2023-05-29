@@ -9,10 +9,13 @@
 </head>
 
 <body>
-    <form action="home.html" method="post">
+    <form action="home.html" method="post" autocomplete="on">
 
         <p><label for="inome">Nome:</label>
-            <input type="text" name="inome" id="inome" placeholder="Digite seu nome">
+            <input type="text" name="inome" id="inome" placeholder="Digite seu nome" autocomplete="name">
+        </p>
+        <p><label for="nivel">Nível de Satisfação:</label>
+            <input type="range" name="nivel" id="nivel" >
         </p>
         <fieldset>
             <legend>Sexo</legend>
@@ -22,6 +25,32 @@
             <label for="ifem">Feminino</label>
 
         </fieldset>
+        <br>
+        <fieldset>
+            <legend> Esportes Favoritos</legend>
+            <input type="checkbox" name="esportes" id="futebol"> 
+            <label for="futebol">Futebol</label><br>
+            <input type="checkbox" name="esportes" id="volei"> 
+            <label for="volei">Vôlei</label><br>
+            <input type="checkbox" name="esportes" id="basquete">
+            <label for="basquete">Basquete</label><br>
+            <input type="checkbox" name="esportes" id="natacao">
+            <label for="natacao">Natação</label>
+
+        </fieldset>
+        <fieldset>
+            <legend> Cor Favorita</legend>
+            <label for="cor"></label>
+            <input type="color" name="cor" id="cor" value=" #90ff00">
+
+        </fieldset>
+
+        <p>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+
+        </p>
+
 
 
 
