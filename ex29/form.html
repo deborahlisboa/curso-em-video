@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        fieldset {
+            width: 500px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            text-align:start;
+            background-color: rgba(127, 255, 212, 0.311);
+        }
+        legend {
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #3e9ba1;
+            border-radius: 5px;
+            height: 25px;
+            width: 170px;
+            text-align: center;
+            padding: 5px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .botao{
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form action="controle.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend> DADOS PESSOAIS </legend>
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" required>
+            </p>
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" name="sexo">
+                <option value="">Selecione</option>
+                <option value="feminino">Feminino</option>
+                <option value="masculino">Masculino</option>
+            </select>
+            
+            <p>
+                <label for="prof">Profissão:</label>
+                <input type="text" name="prof" id="prof" required list="listaprof">
+                <datalist id="listaprof">
+                    <option> Professor </option>
+                    <option> Engenheiro </option>
+                    <option> Médica </option>
+                    <option> Diretora </option>
+                    <option> Advogada </option>
+                </datalist>
+            </p>
+            <p class="botao">
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Enviar">
+            </p>
+        </fieldset>
+
+
+
+
+
+    </form>
+</body>
+
+</html>
