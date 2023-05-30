@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        html,
+        body {
+            min-height: 100vh;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(205, 220, 245);
+            display: block;
+        }
+
+        fieldset {
+            height: 150px;
+            width: 300px;
+            border: 2px solid rgb(202, 209, 212);
+            border-radius: 10px;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        legend {
+            font-size: 18px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            text-align: center;
+            height: 30px;
+            width: 150px;
+            border-radius: 10px;
+            background-color: rgba(100, 148, 237, 0.535);
+        }
+
+        header {
+            text-align: center;
+            width: 100vw;
+            background-color: rgb(17, 44, 79);
+            color: white;
+            text-align: center
+        }
+
+        header>h2 {
+            padding-top: 50px;
+            font-variant: small-caps;
+            font-size: 5vw;
+            margin: auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <p>
+        <h2>Utilizando OutPut</h2>
+        </p>
+    </header>
+    <form>
+        <fieldset>
+            <legend>Teste de SOMA</legend>
+            <p>
+                <label for="num1">Digite um número:</label>
+                <input type="number" id="num1" name="num1" min="1" max="50"
+                    oninput="resultado.innerHTML = Number(num1.value) + Number(num2.value)">
+            </p>
+            <p>
+                <label for="num2">Digite outro número:</label>
+                <input type="number" id="num2" name="num2" min="1" max="50"
+                    oninput="resultado.innerHTML = Number(num1.value) + Number(num2.value)">
+            </p>
+            <p>
+                <label for="resultado">Resultado:</label>
+                <output for="num1 num2" id="resultado">0</output>
+            </p>
+        </fieldset>
+    </form>
+    <br>
+
+    <form action="controle.php" method="get">
+        <fieldset>
+            <legend>Teste de RANGE</legend>
+            <label for="n">Número:</label>
+            <input type="range" name="n" id="n" min="1" max="10" oninput="numero.innerHTML = (n.value)">
+            <output id="numero">5</output>
+        </fieldset>
+
+    </form>
+    <br>
+    <form action="controle.php" method="get">
+        <fieldset>
+            <legend>Teste de IDADE</legend>
+            <p>
+                <label for="ano">Em que ano você nasceu?</label>
+                <input type="number" name="ano" id="ano" min="1960" max="2023" oninput="calcIdade()">
+            </p>
+            <p>
+                <label for="idade">Sua idade é:</label>
+                <output id="idade">0</output>
+            </p>
+            <p>
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Enviar">
+            </p>
+        </fieldset>
+
+    </form>
+
+    <script>
+        function calcIdade() {
+            let atual = new Date().getUTCFullYear()
+            idade.innerHTML = Number(atual) - Number(ano.value)
+        }
+    </script>
+</body>
+
+</html>
