@@ -19,7 +19,7 @@ header > h1 {
   text-align: center;
 }
 menu {
-  display: block;
+  display: none;
 }
 menu > ul {
     
@@ -30,13 +30,13 @@ menu > ul > li > a{
     text-decoration: none;
     color: white;
     padding: 10px;
-    background-color: #158a8c;
+    background-color: #5CA1A1;
     text-align: center;
     border-top: 2px solid #b4bec9
 }
 menu > ul > li > a:hover {
-    background-color: #DEEFE7 ;
-    color: #159a9c;
+    background-color: #C7FFF7;
+    color: #012E40;
     font-height: bolder;
 
 }
@@ -57,4 +57,16 @@ article > p {
     text-align: justify;
     margin-bottom: 10px;
     text-indent: 20px;
+}
+span#menu{
+    background-color: #025159;
+    color: white;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+span#menu:hover{
+    background-color: white;
+    color: black;
 }
