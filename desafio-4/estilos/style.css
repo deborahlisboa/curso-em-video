@@ -14,7 +14,7 @@
 }
 :root{
     --azul:#196774;
-    --amarelo: #F0941F;
+    --azulclaro: #48808A;
 }
 
 body, html{
@@ -47,11 +47,40 @@ div > img{
 }
 div > h1{
     text-align: center;
+    padding-bottom: 10px;
 }
 section > div#formulario{
     display: block;
     padding: 10px;
+}
+p#email{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
     text-align: center;
 }
-
-
+p#senha{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-align:center;
+}
+p#botao{
+    text-align: center;
+}
+input#botaologin{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--azulclaro);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    
+}
+input#botaologin:hover{
+    background-color: #002D4D;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
